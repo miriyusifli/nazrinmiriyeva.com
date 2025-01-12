@@ -20,21 +20,27 @@
   border-radius: 22px;
   overflow: hidden;
   max-width: 620px;
-  transition: all 0.3s ease;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
   height: fit-content;
   display: flex;
   flex-direction: column;
+  position: relative;
+  transform-origin: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .project-card > div {
   padding: 30px 40px;
+  position: relative;
+  z-index: 2;
 }
 
 .project-card img.img-full {
   padding: 0 16px 16px 40px;
-    width: 100%;
+  width: 100%;
   max-width: 100%;
   box-sizing: border-box;
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .tag {
@@ -48,21 +54,36 @@
   width: fit-content;
 }
 
-/* Hover Effects */
+/* Enhanced Hover Effects */
 .project-card:hover {
   background: rgba(0, 0, 0, 1);
   color: white;
   cursor: pointer;
+  transform: translateY(-8px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2);
 }
 
 .project-card:hover .tag {
   background: rgba(207, 220, 255, 0.23);
   color: white;
+  transform: scale(1.05);
 }
 
 .project-card:hover .button {
   background-color: rgba(255, 255, 255, 1);
   color: rgba(2, 12, 48, 1);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.project-card:hover img.img-full {
+  transform: scale(1.02);
+}
+
+/* Add transitions to child elements */
+.project-card .tag,
+.project-card .button {
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Icon */
