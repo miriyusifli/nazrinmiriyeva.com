@@ -176,7 +176,7 @@ a.no-link-style:hover {
 }
 
 .button {
-  padding: 15px 26.5px;
+  padding: 13px 20px;
   background-color: var(--color-link-button);
   color: white;
   border: none;
