@@ -1,109 +1,43 @@
-/* Header Styles */
-.header {
-  padding: var(--spacing-md);
-}
-
-.header-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  gap: var(--spacing-md);
-}
-
-.image-container {
+/* Profile Image */
+.profile-image {
   position: relative;
   width: 120px;
   height: 120px;
-  border-radius: 50%;
   border: 2px solid var(--color-primary);
+  border-radius: 50%;
 }
 
-.text-section .name {
-  font-family: 'Comfortaa';
-  font-size: 28px;
-  font-weight: 700;
-  margin: 0;
-  line-height: 1.2;
-}
-
-.text-section .position {
-  font-family: 'Comfortaa';
-  font-size: 20px;
-  font-weight: 600;
-  color: var(--color-text);
-  margin-top: 8px;
-  margin-bottom: 20px;
-  line-height: 1.2;
-}
-
-.text-section .description {
-  font-family: 'Comfortaa';
-  margin-top: 50px;
-  margin-bottom: 16px;
-  max-width: 820px;
-  font-size: var(--font-size-lg);
-  line-height: 42px;
-}
-
-/* Image Section Styles */
-.image-thumbnail {
+.profile-image img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
   border-radius: 50%;
 }
 
-/* Card Component */
-.case-study-cards-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: var(--spacing-md);
-  margin: var(--spacing-lg) auto;
-}
-
-.card {
+/* Project Card */
+.project-card {
   background: rgba(242, 245, 255, 1);
   border-radius: 22px;
   overflow: hidden;
   max-width: 620px;
-  max-height: 730px;
-  padding: 30px 40px 30px 40px;
   transition: all 0.3s ease;
-}
-
-.case-study-card-header {
-  position: relative;
+  height: fit-content;
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-xs);
 }
 
-.case-study-card-header .title-wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.project-card > div {
+  padding: 30px 40px;
 }
 
-.case-study-card-header .title {
-  font-size: var(--font-size-xl);
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font-weight: bold;
+.project-card img.img-full {
+  padding: 0 16px 16px 40px;
+    width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
-.case-study-card-header .header-icon {
-  width: 24px;
-  height: 24px;
-  object-fit: contain;
-}
-
-.case-study-card-header .date {
-  font-size: var(--font-size-base);
-  font-weight: 500;
-}
-
-.case-study-card-header .tag-box {
+.tag {
   background: rgba(214, 225, 255, 0.46);
   font-size: var(--font-size-sm);
   padding: 4px 12px;
@@ -114,59 +48,28 @@
   width: fit-content;
 }
 
-.case-study-card-body p {
-  font-size: var(--font-size-xl);
-  font-weight: 500;
-  line-height: 54px;
-  margin-bottom: 14px;
-}
-
-.case-study-card-body img {
-  width: 100%;
-  margin-top: 20px;
-  max-width: 525px;
-  height: auto;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-/* Add hover styles for the card and its children */
-.card:hover {
+/* Hover Effects */
+.project-card:hover {
   background: rgba(0, 0, 0, 1);
-}
-
-.card:hover .case-study-card-header .title,
-.card:hover .case-study-card-header .date,
-.card:hover .case-study-card-body p {
   color: white;
+  cursor: pointer;
 }
 
-.card:hover .case-study-card-header .tag-box {
+.project-card:hover .tag {
   background: rgba(207, 220, 255, 0.23);
   color: white;
 }
 
-.card:hover .button {
+.project-card:hover .button {
   background-color: rgba(255, 255, 255, 1);
   color: rgba(2, 12, 48, 1);
 }
 
-/* Responsive Styles */
-@media (max-width: 968px) {
-  .header-content {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-  
-  .text-section {
-    margin-right: 0;
-    margin-bottom: var(--spacing-lg);
-  }
-}
-
-@media (max-width: 768px) {
-  .case-study-cards-container {
-    grid-template-columns: 1fr;
-  }
+/* Icon */
+.icon {
+  width: 18px;
+  height: 18px;
+  display: inline;
+  vertical-align: middle;
+  margin: 0 4px;
 } 
