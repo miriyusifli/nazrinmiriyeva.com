@@ -355,6 +355,14 @@ h1, h2, h3, p {
     margin-left: 5px; 
     vertical-align: middle;
 }
+
+.icon-text {
+  display: inline; 
+  margin-left: 5px; 
+  vertical-align: middle;
+  max-width: 120px;
+}
+
 /* Images */
 .img-full {
     width: 100%;
