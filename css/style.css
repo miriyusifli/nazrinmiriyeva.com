@@ -352,7 +352,8 @@ h1, h2, h3, p {
 
 .icon {
     display: inline; 
-    margin-left: 5px; 
+    margin-left: 5px;
+    padding-bottom: 2px;
     vertical-align: middle;
 }
 
