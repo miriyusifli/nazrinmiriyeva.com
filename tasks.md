@@ -1,1 +1,0 @@
-14. ⁠uzun textler de menimkinden nyese bold gorunur
