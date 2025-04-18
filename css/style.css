@@ -396,8 +396,10 @@ h1, h2, h3, p {
     padding: 0;
 }
 
+.height-30 {
+  height: 120px;
+}
 
-/* Media Queries */
 @media (max-width: 1024px) {
     .lg\:flex-col { flex-direction: column; }
     .lg\:w-full { width: 100%; }
