@@ -351,11 +351,29 @@ h1, h2, h3, p {
   gap: 1rem;
 }
 
+/* Icons */
 .icon {
     display: inline; 
     margin-left: 5px;
     padding-bottom: 2px;
     vertical-align: middle;
+}
+
+.sm-icon {
+  width: 18px !important;
+  display: inline; 
+  margin-left: 5px;
+  padding-bottom: 2px;
+  vertical-align: middle;
+}
+
+
+.md-icon {
+  width: 20px !important;
+  display: inline; 
+  margin-left: 5px;
+  padding-bottom: 2px;
+  vertical-align: middle;
 }
 
 .icon-text {
