@@ -153,10 +153,6 @@ a.no-link-style {
   cursor: pointer;
 }
 
-a.no-link-style:hover {
-  opacity: 0.8;
-}
-
 /* Layout Components */
 .container {
   max-width: var(--container-max-width);
@@ -189,6 +185,10 @@ a.no-link-style:hover {
   display: inline-flex;
   align-items: center;
   gap: 8px;
+}
+
+.button:disabled {
+  background-color: #020C3057;
 }
 
 .button-icon {
