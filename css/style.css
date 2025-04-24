@@ -381,6 +381,7 @@ h1, h2, h3, p {
   margin-left: 5px; 
   vertical-align: middle;
   max-width: 120px;
+  max-height: 27px;
 }
 
 /* Images */
@@ -420,15 +421,35 @@ h1, h2, h3, p {
   height: 120px;
 }
 
+.height-50 {
+  height: 150px;
+}
+
 @media (max-width: 1024px) {
     .lg\:flex-col { flex-direction: column; }
     .lg\:w-full { width: 100%; }
     .lg\:text-center { text-align: center; }
     .lg\:items-center { align-items: center; }
     .lg\:gap-8 { gap: 32px; }
+    .lg\:height-30 {
+      height: 120px;
+    }
+    
+    .lg\:height-50 {
+      height: 150px;
+    }
 }
 
 @media (max-width: 768px) {
     .md\:grid-cols-1 { grid-template-columns: 1fr; }
     .md\:gap-6 { gap: 24px; }
+    .md\:height-30 {
+      height: 120px;
+    }
+    .md\:height-50 {
+      height: 150px;
+    }
+    .desktop-only {
+      display: none;
+    }
 }
