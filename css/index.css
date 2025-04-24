@@ -43,6 +43,20 @@
   transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.project-card .description {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.6;
+  margin-bottom: 16px;
+  font-family: 'Comfortaa';
+  display: -webkit-box;
+  line-clamp: 3;
+  -webkit-line-clamp: 3;           /* Number of lines to show */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  height: 5em; 
+}
+
 .tag {
   background: rgba(214, 225, 255, 0.46);
   font-size: var(--font-size-sm);
